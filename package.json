@@ -7,7 +7,7 @@
     "nodemon": "nodemon --exec babel-node lib/server/app.js",
     "webpack": "webpack -wd",
     "start": "concurrently \"yarn nodemon -s\" \"yarn webpack -s\"",
-    "test": "jest --watch",    
+    "test": "jest --watch",
     "build": ""
   },
   "babel": {
@@ -31,6 +31,7 @@
   },
   "devDependencies": {
     "babel-eslint": "^7.2.3",
+    "concurrently": "^3.4.0",
     "eslint": "^3.19.0",
     "eslint-plugin-react": "^7.0.1",
     "jest": "^20.0.4",
