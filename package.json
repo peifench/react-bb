@@ -4,7 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "start": "nodemon --exec babel-node lib/server/app.js",
+    "nodemon": "nodemon --exec babel-node lib/server/app.js",
+    "webpack": "webpack -wd",
+    "start": "concurrently \"yarn nodemon -s\" \"yarn webpack -s\"",
     "build": ""
   },
   "babel": {
