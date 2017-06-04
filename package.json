@@ -1,0 +1,32 @@
+{
+  "name": "advanced-react",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon --exec babel-node lib/server/app.js",
+    "build": ""
+  },
+  "babel": {
+    "presets": [
+      "react",
+      "env",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-loader": "^7.0.0",
+    "babel-preset-env": "^1.5.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
+    "ejs": "^2.5.6",
+    "express": "^4.15.3",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "webpack": "^2.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.11.0"
+  }
+}
